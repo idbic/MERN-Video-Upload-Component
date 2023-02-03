@@ -20,10 +20,12 @@ import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightne
 import {Link} from 'react-router-dom'
 const Container = styled.div`
     flex:1;
-    background-color: #202020;
-    height: 100vh;/
+    background-color: ${({theme})=> theme.bg };
+    height: 100%;/
     color: white;
     font-size: 10px;
+    position: sticky;
+    top: 0;
 
 
 `
@@ -50,6 +52,8 @@ display: flex;
 align-items: center;
 gap: 20px;
 cursor: pointer;
+color: white;
+padding: 7.5px 0px;
 `
 
 const Hr = styled.hr`
@@ -57,7 +61,9 @@ const Hr = styled.hr`
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
-const Login = styled.div``;
+const Login = styled.div`
+color: white;`;
+
 const Button = styled.button`
   padding: 5px 15px;
   background-color: transparent;
@@ -70,6 +76,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
+  
 `;
 
 const Title = styled.h2`
@@ -114,7 +121,7 @@ export default function Menu (){
             </Item>
         </Login>
         <Hr />
-        <Title>BEST OF LAMATUBE</Title>
+        <Title>BEST OF</Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
