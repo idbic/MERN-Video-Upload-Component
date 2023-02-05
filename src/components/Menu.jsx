@@ -25,7 +25,7 @@ const Container = styled.div`
     flex:1;
     background-color:${({theme})=> theme.bg } ;
     height: 100%;/
-    color: white;
+    color: ${({theme})=> theme.text };
     font-size: 10px;
     position: sticky;
     top: 0;
@@ -55,7 +55,7 @@ display: flex;
 align-items: center;
 gap: 20px;
 cursor: pointer;
-color: white;
+color: ${({ theme }) => theme.text};
 padding: 7.5px 0px;
 `
 
@@ -90,7 +90,7 @@ const Title = styled.h2`
 `;
 
 
-export default function Menu (){
+export default function Menu ({darkMode, setDarkMode}){
     return(
         <Container>
             <Wrapper>
@@ -162,7 +162,7 @@ export default function Menu (){
           <HelpOutlineOutlinedIcon />
           Help
         </Item>
-        <Item >
+        <Item onClick={()=>setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
           Mode
         </Item>
