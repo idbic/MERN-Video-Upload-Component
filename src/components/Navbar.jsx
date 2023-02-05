@@ -27,7 +27,10 @@ const Search = styled.div`
   border: 1px solid #ccc;
   border-radius: 3px;
 `;
-const Input = styled.input``;
+const Input = styled.input`
+border: none;
+background-color: transparent;
+`;
 const Button = styled.button`
   padding: 5px 15px;
   background-color: transparent;
