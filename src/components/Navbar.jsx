@@ -5,7 +5,7 @@ import  SearchOutlinedIcon  from "@mui/icons-material/SearchOutlined";
 const Container = styled.div`
 position: sticky;
 top: 0;
-background-color: ${({theme})=> theme.bg}`;
+background-color: ${({theme})=> theme.bgLighter}`;
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -14,7 +14,19 @@ const Wrapper = styled.div`
   padding: 0px 20px;
   position: relative;
 `;
-const Search = styled.div``;
+const Search = styled.div`
+  width: 40%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+`;
 const Input = styled.input``;
 const Button = styled.button`
   padding: 5px 15px;
