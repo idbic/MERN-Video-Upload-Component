@@ -94,10 +94,12 @@ export default function Menu ({darkMode, setDarkMode}){
     return(
         <Container>
             <Wrapper>
-                <Logo>
+                <Link to='/' style={{textDecoration:'none', color: 'inherit'}}>
+                  <Logo>
                     <Img src={thelogo}/>
                     YerTURB.
                 </Logo>
+                 </Link>
                 <Item>
                     <HomeIcon/> 
                     Home
