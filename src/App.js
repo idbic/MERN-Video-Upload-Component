@@ -18,7 +18,7 @@ const Main = styled.div`
 `
 
 const Wrapper = styled.div`
-
+padding: 22px;
 `
 
 function App() {
