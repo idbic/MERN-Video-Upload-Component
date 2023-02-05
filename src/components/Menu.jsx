@@ -124,7 +124,7 @@ export default function Menu ({darkMode, setDarkMode}){
             </Item>
         </Login>
         <Hr />
-        <Title>BEST OF</Title>
+        <Title>BEST OF YERTUBE</Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
