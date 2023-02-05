@@ -3,7 +3,7 @@ import './App.css';
 import styled, {ThemeProvider}from 'styled-components';
 import Menu from './components/Menu';
 import NavBar from './components/Navbar';
-import { darkTheme } from './Utils/Theme';
+import { darkTheme, lightTheme } from './Utils/Theme';
 const Container = styled.div `
   display: flex;
 `
