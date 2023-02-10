@@ -6,6 +6,8 @@ import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
 import AddTaskOutlinedIcon from '@mui/icons-material/AddTaskOutlined';
 import Comments from '../components/Comments';
+import Card from '../components/NewCard';
+
 
 
 const Container = styled.div`
@@ -136,7 +138,17 @@ export default function Video() {
                 <Comments/>
             </Content>
             <Recommended>
-                Recommended
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            
+            
+
             </Recommended>
         </Container>
     )

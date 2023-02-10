@@ -6,8 +6,10 @@ import {Link} from 'react-router-dom';
 
 const Container = styled.div`
 width: 360px;
-margin-bottom: 45px;
-cursor: pointer;`
+margin-bottom: ${({props})=>props.type=== 'sm' ? '10px' : '45px'};
+cursor: pointer;
+display: ${({props})=>props.type=== 'sm' && 'flex'};
+`
 
 const Img = styled.img`
 width: 100%;
@@ -47,14 +49,17 @@ color: ${({theme})=>theme.textSoft};
 `
 
 
-export default function Card(){
+
+ export default function Card({type}){
     return(
+        <>
         <Link to='/video/test' style={{textDecoration:'none'}}>
-        <Container>
-            <Img src={armbar}/>
+        <Container type={type}>
+            
                 <Details>
-                    <ChannelImage/>
+                    <Img src={armbar}/>
                     <Texts>
+                        <ChannelImage/>
                         <Title>Video Title</Title>
                         <ChannelName>DBic</ChannelName>
                         <Info>1111 views 1 Day Ago</Info>
@@ -64,5 +69,8 @@ export default function Card(){
 
         </Container>
         </Link>
+        
+        </>
+        
     )
 }

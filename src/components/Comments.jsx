@@ -1,6 +1,7 @@
-import react from 'react';
+// import react from 'react';
 import styled from 'styled-components';
 import Comment from './Comment';
+
 
 const Container = styled.div``;
 const NewComment = styled.div`
@@ -33,6 +34,7 @@ export default function Comments(){
             <Input placeholder='Add a comment...'/>
 
         </NewComment>
+        
         <Comment/>
         <Comment/>
         <Comment/>
