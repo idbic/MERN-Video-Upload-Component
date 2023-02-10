@@ -43,6 +43,7 @@ margin: 9px 0px;`
 const Info = styled.div`
 font-size: 14px;
 color: ${({theme})=>theme.textSoft};
+;
 `
 
 

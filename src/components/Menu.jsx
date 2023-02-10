@@ -166,7 +166,7 @@ export default function Menu ({darkMode, setDarkMode}){
         </Item>
         <Item onClick={()=>setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
-          Mode
+          {darkMode ? "Light" : "Dark" } Mode
         </Item>
             </Wrapper>
         </Container>
