@@ -119,10 +119,10 @@ export default function Menu ({darkMode, setDarkMode}){
                 <Login>
           Sign in to like videos, comment, and subscribe.
          <Item>
-            <Button>
+            <Link to='/signin'><Button>
               <AccountCircleOutlinedIcon />
               SIGN IN
-            </Button>
+            </Button></Link>
             </Item>
         </Login>
         <Hr />
